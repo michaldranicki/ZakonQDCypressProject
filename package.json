@@ -1,0 +1,16 @@
+{
+  "name": "zakonqdcypressproject",
+  "version": "1.0.0",
+  "description": "Part 1 of zakonQD cypress project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michał Dranicki",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.20",
+    "cypress": "^6.2.1",
+    "typescript": "^4.1.3"
+  }
+}

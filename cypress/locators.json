@@ -1,0 +1,22 @@
+{
+
+    "homePage":{
+
+        "contactUs":"#contact-link",
+        "signIn":"#header > div.nav > div > div > nav > div.header_user_info > a"
+
+    },
+
+    "contactUsPage":{
+
+        "homeButton":"#columns > div.breadcrumb.clearfix > a",
+        "subjectHeadingList":"#id_contact",
+        "emailAddressField":"#email",
+        "orderReferenceField":"#id_order",
+        "attachFile":"#uniform-fileUpload",
+        "messageBox":"#message",
+        "submitButton":"#submitMessage"
+
+    }
+
+}
