@@ -31,6 +31,37 @@
         "createAccountForm":"#create-account_form",
         "logInForm":"#login_form"
 
+    },
+
+    "createAccountPage":{
+
+        "accountCreationForm":"#account-creation_form",
+        "mrRadioButton":"#uniform-id_gender1",
+        "msRadioButton":"#id_gender2",
+        "firstNameField":"#customer_firstname",
+        "lastNameField":"#customer_lastname",
+        "emailField":"#email",
+        "passwordField":"#passwd",
+        "daysDate":"#days",
+        "monthsDate":"#months",
+        "yearsDate":"#years",
+        "newsletterCheckbox":"#newsletter",
+        "specialOfferCheckbox":"#optin",
+        "firstNameAddress":"#firstname",
+        "lastNameAddress":"#lastname",
+        "companyField":"#company",
+        "addressField1":"#address1",
+        "addressFiels2":"#address2",
+        "cityField":"#city",
+        "stateList":"#id_state",
+        "postCodeField":"#postcode",
+        "countryList":"#id_country",
+        "additionaInformationBox":"#other",
+        "homePhoneField":"#phone",
+        "mobilePhoneField":"#phone_mobile",
+        "addressAliasField":"#alias",
+        "registerButton":"#submitAccount"
+
     }
 
 }
