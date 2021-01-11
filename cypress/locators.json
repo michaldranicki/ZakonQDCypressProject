@@ -17,6 +17,20 @@
         "messageBox":"#message",
         "submitButton":"#submitMessage"
 
+    },
+
+    "signInPage":{
+
+        "humeButton":"#columns > div.breadcrumb.clearfix > a",
+        "emailCreateAccount":"#email_create",
+        "createAccountButton":"#SubmitCreate",
+        "emailSignIn":"#email",
+        "passwordField":"#passwd",
+        "forgotPassword":"#login_form > div > p.lost_password.form-group > a",
+        "signInButton":"#SubmitLogin",
+        "createAccountForm":"#create-account_form",
+        "logInForm":"#login_form"
+
     }
 
 }

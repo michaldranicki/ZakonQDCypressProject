@@ -9,12 +9,12 @@ export default class HomePageElements{
 
         return cy.get(locator.homePage.contactUs)
 
-    };
+    }
 
     signInButton(){
 
         cy.get(locator.homePage.signIn)
 
-    };
+    }
 
-};
+}
