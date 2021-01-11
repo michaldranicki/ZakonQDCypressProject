@@ -10,32 +10,32 @@ export default class HomePageAction{
 
        globalThis.homePageElement = new HomePageElements();
            
-    };
+    }
 
     navigateToUrl(){
 
         cy.visit('/')
 
-    };
+    }
 
     validateTitle(){
 
         return cy.title()
 
-    };
+    }
 
     contactUs(){
         
         globalThis.homePageElement.contactUsButton().click()
 
-    };
+    }
 
     signIn(){
 
         globalThis.homePageElement.signInButton().click()
 
-    };
+    }
 
-};
+}
 
 
