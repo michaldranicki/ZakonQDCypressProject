@@ -3,7 +3,13 @@
     "homePage":{
 
         "contactUs":"#contact-link",
-        "signIn":"#header > div.nav > div > div > nav > div.header_user_info > a"
+        "signIn":"#header > div.nav > div > div > nav > div.header_user_info > a",
+        "popularSection":"#home-page-tabs > li.active > a",
+        "bestSellerSection":"#home-page-tabs > li:nth-child(2) > a",
+        "clothesArea":"#center_column",
+        "womenSection":"body.index.hide-left-column.hide-right-column.lang_en:nth-child(2) div.header-container div.container div.row div.sf-contener.clearfix.col-lg-12:nth-child(6) ul.sf-menu.clearfix.menu-content.sf-js-enabled.sf-arrows li:nth-child(1) > a.sf-with-ul",
+        "dressesSection":"body.index.hide-left-column.hide-right-column.lang_en:nth-child(2) div.header-container div.container div.row div.sf-contener.clearfix.col-lg-12:nth-child(6) ul.sf-menu.clearfix.menu-content.sf-js-enabled.sf-arrows li:nth-child(2) > a.sf-with-ul",
+        "tshirtSection":"body.index.hide-left-column.hide-right-column.lang_en:nth-child(2) div.header-container div.container div.row div.sf-contener.clearfix.col-lg-12:nth-child(6) ul.sf-menu.clearfix.menu-content.sf-js-enabled.sf-arrows li:nth-child(3) > a:nth-child(1)"
 
     },
 
