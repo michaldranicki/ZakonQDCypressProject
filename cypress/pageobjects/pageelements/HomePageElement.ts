@@ -3,8 +3,9 @@
 //const locator = require('../../locators.json');
 import * as locator from  '../../locators.json';
 
+
 export default class HomePageElements{
-   
+   // cy.get('#contact-link)
     contactUsButton(){
 
         return cy.get(locator.homePage.contactUs)
