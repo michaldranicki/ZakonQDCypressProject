@@ -1,50 +1,46 @@
 /// <reference types="cypress" />
 
-import * as locator from  '../../locators.json';
+import * as locator from  'locators.json';
 
 
-export default class ContactUsPageElement{
+export function homeButton(){
 
-    homeButton(){
+    return cy.get(locator.contactUsPage.homeButton)
 
-        return cy.get(locator.contactUsPage.homeButton)
+}
 
-    }
+export function subjectHeadingList(){
 
-    subjectHeadingList(){
+    return cy.get(locator.contactUsPage.subjectHeadingList)
 
-        return cy.get(locator.contactUsPage.subjectHeadingList)
+}
 
-    }
+export function emailAddressField(){
 
-    emailAddressField(){
+    return cy.get(locator.contactUsPage.emailAddressField)
 
-        return cy.get(locator.contactUsPage.emailAddressField)
+}
 
-    }
-
-    orderReferenceField(){
+export function orderReferenceField(){
 
         return cy.get(locator.contactUsPage.orderReferenceField)
 
-    }
+}
 
-    attachFile(){
+export function attachFile(){
 
         return cy.get(locator.contactUsPage.attachFile)
 
-    }
+}
 
-    messageBox(){
+export function messageBox(){
 
-        return cy.get(locator.contactUsPage.messageBox)
+    return cy.get(locator.contactUsPage.messageBox)
 
-    }
+}
 
-    submitButton(){
+export function submitButton(){
 
-        return cy.get(locator.contactUsPage.submitButton)
-
-    }
+    return cy.get(locator.contactUsPage.submitButton)
 
 }

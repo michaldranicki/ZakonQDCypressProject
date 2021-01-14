@@ -2,8 +2,7 @@
 
 import {contactUsButton,signInButton} from 'pageobjects/pageelements/HomePageElement'
 
-
-    
+  
 export function navigateToUrl(){
 
     cy.visit('/')

@@ -1,163 +1,160 @@
 /// <reference types="cypress" />
 
-import * as locator from  '../../locators.json';
+import * as locator from  'locators.json';
 
-export default class CreateAccountPage{
 
-    accountCreationForm(){
+export function accountCreationForm(){
 
-        return cy.get(locator.createAccountPage.accountCreationForm)
+    return cy.get(locator.createAccountPage.accountCreationForm)
 
-    }
+}
     
-    mrRadioButton(){
+export function mrRadioButton(){
 
-        return cy.get(locator.createAccountPage.mrRadioButton)
+    return cy.get(locator.createAccountPage.mrRadioButton)
 
-    }
+}
 
-    msRadioButton(){
+export function msRadioButton(){
 
-        return cy.get(locator.createAccountPage.msRadioButton)
+    return cy.get(locator.createAccountPage.msRadioButton)
 
-    }
+}
 
-    firstNameField(){
+export function firstNameField(){
 
-        return cy.get(locator.createAccountPage.firstNameField)
+    return cy.get(locator.createAccountPage.firstNameField)
 
-    }
+}
 
-    lastNameField(){
+export function lastNameField(){
 
-        return cy.get(locator.createAccountPage.lastNameField)
+    return cy.get(locator.createAccountPage.lastNameField)
 
-    }
+}
 
-    emailField(){
+export function emailField(){
 
-        return cy.get(locator.createAccountPage.emailField)
+    return cy.get(locator.createAccountPage.emailField)
 
-    }
+}
 
-    passwordField(){
+export function passwordField(){
 
-        return cy.get(locator.createAccountPage.passwordField)
+    return cy.get(locator.createAccountPage.passwordField)
 
-    }
+}
 
-    daysDate(){
+export function daysDate(){
 
-        return cy.get(locator.createAccountPage.daysDate)
+    return cy.get(locator.createAccountPage.daysDate)
 
-    }
+}
 
-    monthsDate(){
+export function monthsDate(){
 
-        return cy.get(locator.createAccountPage.monthsDate)
+    return cy.get(locator.createAccountPage.monthsDate)
 
-    }
+}
 
-    yearsDate(){
+export function yearsDate(){
 
-        return cy.get(locator.createAccountPage.yearsDate)
+    return cy.get(locator.createAccountPage.yearsDate)
 
-    }
+}
 
-    newsletterCheckbox(){
+export function newsletterCheckbox(){
 
-        return cy.get(locator.createAccountPage.newsletterCheckbox)
+    return cy.get(locator.createAccountPage.newsletterCheckbox)
 
-    }
+}
 
-    specialOfferCheckbox(){
+export function specialOfferCheckbox(){
 
-        return cy.get(locator.createAccountPage.specialOfferCheckbox)
+    return cy.get(locator.createAccountPage.specialOfferCheckbox)
 
-    }
+}
 
-    firstNameAddress(){
+export function firstNameAddress(){
 
-        return cy.get(locator.createAccountPage.firstNameAddress)
+    return cy.get(locator.createAccountPage.firstNameAddress)
 
-    }
+}
 
-    lastNameAddress(){
+export function lastNameAddress(){
 
-        return cy.get(locator.createAccountPage.lastNameAddress)
+    return cy.get(locator.createAccountPage.lastNameAddress)
 
-    }
+}
 
-    companyField(){
+export function companyField(){
 
-        return cy.get(locator.createAccountPage.companyField)
+    return cy.get(locator.createAccountPage.companyField)
 
-    }
+}
 
-    addressField1(){
+export function addressField1(){
 
-        return cy.get(locator.createAccountPage.addressField1)
+    return cy.get(locator.createAccountPage.addressField1)
 
-    }
+}
 
-    addressField2(){
+export function addressField2(){
 
-        return cy.get(locator.createAccountPage.addressFiels2)
+    return cy.get(locator.createAccountPage.addressFiels2)
 
-    }
+}
 
-    cityField(){
+export function cityField(){
 
-        return cy.get(locator.createAccountPage.cityField)
+    return cy.get(locator.createAccountPage.cityField)
 
-    }
+}
 
-    stateList(){
+export function stateList(){
 
-        return cy.get(locator.createAccountPage.stateList)
+    return cy.get(locator.createAccountPage.stateList)
 
-    }
+}
 
-    postCodeField(){
+export function postCodeField(){
 
-        return cy.get(locator.createAccountPage.postCodeField)
+    return cy.get(locator.createAccountPage.postCodeField)
 
-    }
+}
 
-    countryList(){
+export function countryList(){
 
-        return cy.get(locator.createAccountPage.countryList)
+    return cy.get(locator.createAccountPage.countryList)
 
-    }
+}
 
-    additionaInformationBox(){
+export function additionaInformationBox(){
 
-        return cy.get(locator.createAccountPage.additionaInformationBox)
+    return cy.get(locator.createAccountPage.additionaInformationBox)
 
-    }
+}
 
-    homePhoneField(){
+export function homePhoneField(){
 
-        return cy.get(locator.createAccountPage.homePhoneField)
+    return cy.get(locator.createAccountPage.homePhoneField)
 
-    }
+}
 
-    mobilePhoneField(){
+export function mobilePhoneField(){
 
         return cy.get(locator.createAccountPage.mobilePhoneField)
 
-    }
+}
 
-    addressAliasField(){
+export function addressAliasField(){
 
-        return cy.get(locator.createAccountPage.addressAliasField)
+    return cy.get(locator.createAccountPage.addressAliasField)
 
-    }
+}
 
-    registerButton(){
+export function registerButton(){
 
-        return cy.get(locator.createAccountPage.registerButton)
-
-    }
+    return cy.get(locator.createAccountPage.registerButton)
 
 }

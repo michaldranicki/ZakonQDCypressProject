@@ -1,61 +1,58 @@
 /// <reference types="cypress" />
 
-import * as locator from  '../../locators.json';
+import * as locator from  'locators.json';
 
-export default class SignInPageElement{
 
-    homeButton(){
+export function homeButton(){
 
-        return cy.get(locator.signInPage.humeButton)
+    return cy.get(locator.signInPage.humeButton)
 
-    }
+}
 
-    emailCreateAccount(){
+export function emailCreateAccount(){
 
-        return cy.get(locator.signInPage.emailCreateAccount)
+    return cy.get(locator.signInPage.emailCreateAccount)
 
-    }
+}
 
-    createAccountButton(){
+export function createAccountButton(){
 
-        return cy.get(locator.signInPage.createAccountButton)
+    return cy.get(locator.signInPage.createAccountButton)
 
-    }
+}
 
-    emailSignIn(){
+export function emailSignIn(){
 
-        return cy.get(locator.signInPage.emailSignIn)
+    return cy.get(locator.signInPage.emailSignIn)
 
-    }
+}
 
-    passwordField(){
+export function passwordField(){
 
-        return cy.get(locator.signInPage.passwordField)
+     return cy.get(locator.signInPage.passwordField)
 
-    }
+}
 
-    forgotPassword(){
+export function forgotPassword(){
 
-        return cy.get(locator.signInPage.forgotPassword)
+    return cy.get(locator.signInPage.forgotPassword)
 
-    }
+}
 
-    signInButton(){
+export function signInButton(){
 
-        return cy.get(locator.signInPage.signInButton)
+    return cy.get(locator.signInPage.signInButton)
 
-    }
+}
 
-    createAccountForm(){
+export function createAccountForm(){
 
-        return cy.get(locator.signInPage.createAccountForm)
+    return cy.get(locator.signInPage.createAccountForm)
 
-    }
+}
 
-    logInForm(){
+export function logInForm(){
 
-        return cy.get(locator.signInPage.logInForm)
-
-    }
+    return cy.get(locator.signInPage.logInForm)
 
 }
