@@ -1,37 +1,34 @@
 /// <reference types="cypress" />
 
-import HomePageAction from '../../pageobjects/pageactions/HomePageAction'
-import ContactUsPageAction from '../../pageobjects/pageactions/contactUsPageAction'
+import { contactUs, navigateToUrl, validateTitle } from 'pageobjects/pageactions/HomePageAction'
+import { fillInContact, returnToHome } from 'pageobjects/pageactions/contactUsPageAction'
+import * as data from 'fixtures/contactUsData.json'
 
 describe("Contact Us Form",()=>{
     
 
-        const homePage = new HomePageAction()
-        const contactUsPage = new ContactUsPageAction()
-        //const contactUsData = new contactUsData()
+        // const homePage = new HomePageAction()
+        // const contactUsPage = new ContactUsPageAction()
+       
     
         before(()=>{
     
-            homePage.navigateToUrl()
-            cy.fixture('contactUsData.json').then((contactUsData)=>{
-
-                globalThis.data = contactUsData
-            })
-    
+            navigateToUrl()
+                
         })
     
         it("Validate title of the page",()=>{
     
-            homePage.validateTitle().should('eq','My Store')
+            validateTitle().should('eq','My Store')
     
         })
     
         it("Access contact us form",()=>{
 
-            homePage.contactUs()
+            contactUs()
            
-            contactUsPage.fillInContact(globalThis.data.subject,globalThis.data.email,globalThis.data.order,globalThis.data.msg)
-            contactUsPage.returnToHome()
+            fillInContact(data.subject,data.email,data.order,data.msg)
+            returnToHome()
 
         })
     

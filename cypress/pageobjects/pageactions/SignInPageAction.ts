@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { createAccountButton, emailCreateAccount, emailSignIn, homeButton, passwordField, signInButton } from 'pageobjects/pageelements/SignInPageElement'
+import { createAccountButton, emailCreateAccount, emailSignIn, homeButton, passwordField, signInButton, forgotPassword} from 'pageobjects/pageelements/SignInPageElement'
 
 
 export function createAccount(email){
@@ -24,7 +24,7 @@ export function logIn(email,password){
 
 }
 
-export function forgotPassword(){
+export function forgotPasswordClick(){
 
     forgotPassword().click()
 
