@@ -27,5 +27,3 @@ export function signIn(){
     signInButton().click()
 
 }
-
-
