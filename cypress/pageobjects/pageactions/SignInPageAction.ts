@@ -1,42 +1,31 @@
 /// <reference types="cypress" />
 
-import SignInPageElement from '../pageelements/SignInPageElement'
+import { createAccountButton, emailCreateAccount, emailSignIn, homeButton, passwordField, signInButton } from 'pageobjects/pageelements/SignInPageElement'
 
-export default class SignInPageAction{
 
-    constructor(){
+export function createAccount(email){
 
-        globalThis.signInPageElement = new SignInPageElement
+    emailCreateAccount().type(email)
+    createAccountButton().click()
 
-    }
-    
-    
-    
-    createAccount(email){
+}
 
-        globalThis.signInPageElement.emailCreateAccount().type(email)
-        globalThis.signInPageElement.createAccountButton().click()
+export function returnHome(){
 
-    }
+    homeButton().click()
 
-    returnHome(){
+}
 
-        globalThis.signInPageElement.homeButton().click()
+export function logIn(email,password){
 
-    }
+    emailSignIn().type(email)
+    passwordField().type(password)
+    signInButton().click()
 
-    logIn(email,password){
+}
 
-        globalThis.signInPageElement.emailSignIn().type(email)
-        globalThis.signInPageElement.passwordField().type(password)
-        globalThis.signInPageElement.signInButton().click()
+export function forgotPassword(){
 
-    }
-
-    forgotPassword(){
-
-        globalThis.signInPageElement.forgotPassword().click()
-
-    }
+    forgotPassword().click()
 
 }

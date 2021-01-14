@@ -29,7 +29,7 @@ export function emailSignIn(){
 
 export function passwordField(){
 
-     return cy.get(locator.signInPage.passwordField)
+    return cy.get(locator.signInPage.passwordField)
 
 }
 

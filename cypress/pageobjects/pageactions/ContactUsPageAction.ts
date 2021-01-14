@@ -1,29 +1,20 @@
 /// <reference types="cypress" />
 
-import ContactUsPageElement from '../pageelements/ContactUsPageElement'
+import { emailAddressField, homeButton, messageBox, orderReferenceField, subjectHeadingList, submitButton } from 'pageobjects/pageelements/ContactUsPageElement'
 
-export default class ContactUsPageAction{
 
-    constructor (){
+export function returnToHome(){
 
-        globalThis.contactUsPageElement = new ContactUsPageElement()
+    homeButton().click()
 
-    }
+}
 
-    returnToHome(){
+export function fillInContact(subject,email,order,msg){
 
-        globalThis.contactUsPageElement.homeButton().click()
-
-    }
-
-    fillInContact(subject,email,order,msg){
-
-        globalThis.contactUsPageElement.subjectHeadingList().select(subject)
-        globalThis.contactUsPageElement.emailAddressField().type(email)
-        globalThis.contactUsPageElement.orderReferenceField().type(order)
-        globalThis.contactUsPageElement.messageBox().type(msg)
-        globalThis.contactUsPageElement.submitButton().click()
-
-    }
+    subjectHeadingList().select(subject)
+    emailAddressField().type(email)
+    orderReferenceField().type(order)
+    messageBox().type(msg)
+    submitButton().click()
 
 }
