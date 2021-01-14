@@ -1,40 +1,30 @@
 /// <reference types="cypress" />
 
-import HomePageElements from "../pageelements/HomePageElement"
+import {contactUsButton,signInButton} from 'pageobjects/pageelements/HomePageElement'
 
 
+    
+export function navigateToUrl(){
 
-export default class HomePageAction{
+    cy.visit('/')
 
-    constructor(){
+}
 
-       globalThis.homePageElement = new HomePageElements();
-           
-    }
+export function validateTitle(){
 
-    navigateToUrl(){
+    return cy.title()
 
-        cy.visit('/')
+}
 
-    }
-
-    validateTitle(){
-
-        return cy.title()
-
-    }
-
-    contactUs(){
+export function contactUs(){
         
-        globalThis.homePageElement.contactUsButton().click()
+    contactUsButton().click()
 
-    }
+}
 
-    signIn(){
+export function signIn(){
 
-        globalThis.homePageElement.signInButton().click()
-
-    }
+    signInButton().click()
 
 }
 

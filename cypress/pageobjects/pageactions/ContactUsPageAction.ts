@@ -21,11 +21,8 @@ export default class ContactUsPageAction{
         globalThis.contactUsPageElement.subjectHeadingList().select(subject)
         globalThis.contactUsPageElement.emailAddressField().type(email)
         globalThis.contactUsPageElement.orderReferenceField().type(order)
-
         globalThis.contactUsPageElement.messageBox().type(msg)
-
         globalThis.contactUsPageElement.submitButton().click()
-
 
     }
 

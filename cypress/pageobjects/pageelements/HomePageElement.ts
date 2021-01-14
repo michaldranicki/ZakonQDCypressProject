@@ -1,57 +1,52 @@
 /// <reference types="cypress" />
 
-//const locator = require('../../locators.json');
-import * as locator from  '../../locators.json';
+import * as locator from  'locators.json';
 
 
-export default class HomePageElements{
-   // cy.get('#contact-link)
-    contactUsButton(){
+export function contactUsButton(){
 
-        return cy.get(locator.homePage.contactUs)
+    return cy.get(locator.homePage.contactUs)
 
-    }
+}
 
-    signInButton(){
+export function signInButton(){
 
-        return cy.get(locator.homePage.signIn)
+    return cy.get(locator.homePage.signIn)
 
-    }
+}
 
-    popularSection(){
+export function popularSection(){
 
-        return cy.get(locator.homePage.popularSection)
+    return cy.get(locator.homePage.popularSection)
 
-    }
+}
 
-    bestSellerSection(){
+export function bestSellerSection(){
 
-        return cy.get(locator.homePage.bestSellerSection)
+    return cy.get(locator.homePage.bestSellerSection)
 
-    }
+}
 
-    clothesArea(){
+export function clothesArea(){
 
-        return cy.get(locator.homePage.clothesArea)
+    return cy.get(locator.homePage.clothesArea)
 
-    }
+}
 
-    womenSection(){
+ export function womenSection(){
 
-        return cy.get(locator.homePage.womenSection)
+    return cy.get(locator.homePage.womenSection)
 
-    }
+}
 
-    dressesSection(){
+export function dressesSection(){
 
-        return cy.get(locator.homePage.dressesSection)
+    return cy.get(locator.homePage.dressesSection)
 
-    }
+}
 
-    tshirtSection(){
+export function tshirtSection(){
 
-        return cy.get(locator.homePage.tshirtSection)
-
-    }
+    return cy.get(locator.homePage.tshirtSection)
 
 }
