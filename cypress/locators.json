@@ -9,7 +9,9 @@
         "clothesArea":"#center_column > div.tab-content",
         "womenSection":"body.index.hide-left-column.hide-right-column.lang_en:nth-child(2) div.header-container div.container div.row div.sf-contener.clearfix.col-lg-12:nth-child(6) ul.sf-menu.clearfix.menu-content.sf-js-enabled.sf-arrows li:nth-child(1) > a.sf-with-ul",
         "dressesSection":"body.index.hide-left-column.hide-right-column.lang_en:nth-child(2) div.header-container div.container div.row div.sf-contener.clearfix.col-lg-12:nth-child(6) ul.sf-menu.clearfix.menu-content.sf-js-enabled.sf-arrows li:nth-child(2) > a.sf-with-ul",
-        "tshirtSection":"body.index.hide-left-column.hide-right-column.lang_en:nth-child(2) div.header-container div.container div.row div.sf-contener.clearfix.col-lg-12:nth-child(6) ul.sf-menu.clearfix.menu-content.sf-js-enabled.sf-arrows li:nth-child(3) > a:nth-child(1)"
+        "tshirtSection":"body.index.hide-left-column.hide-right-column.lang_en:nth-child(2) div.header-container div.container div.row div.sf-contener.clearfix.col-lg-12:nth-child(6) ul.sf-menu.clearfix.menu-content.sf-js-enabled.sf-arrows li:nth-child(3) > a:nth-child(1)",
+        "homePageSlider":"#homepage-slider",
+        "homePageAds":"#htmlcontent_top"
 
     },
 

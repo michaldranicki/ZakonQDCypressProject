@@ -50,3 +50,15 @@ export function tshirtSection(){
     return cy.get(locator.homePage.tshirtSection)
 
 }
+
+export function homePageSlider(){
+
+    return cy.get(locator.homePage.homePageSlider)
+
+}
+
+export function homePageAds(){
+
+    return cy.get(locator.homePage.homePageAds)
+
+}

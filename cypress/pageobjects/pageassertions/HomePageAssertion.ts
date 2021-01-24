@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 
 import * as locator from  'locators.json';
-import {bestSellerSection, contactUsButton, popularSection} from 'pageobjects/pageelements/HomePageElement'
+import {bestSellerSection, contactUsButton, homePageAds, homePageSlider, popularSection, signInButton} from 'pageobjects/pageelements/HomePageElement'
 
 
 export function assertContactUsButton(){
 
-    return contactUsButton().should('be.visible')
+    return contactUsButton().should('contain.text', 'Contact Us')
 
 }
 
@@ -23,5 +23,23 @@ export function assertPopularSection(){
 export function assertBestSellerSection(){
 
     return bestSellerSection().find('li').should('have.length',7)
+
+}
+
+export function assertSignInButton(){
+
+    return signInButton().should('contain.text','Sign in')
+
+}
+
+export function assertHomePageSlider(){
+
+    return homePageSlider().should('be.visible')
+
+}
+
+export function assertHomePageAds(){
+
+    return homePageAds().find('li').should('have.length',2)
 
 }
