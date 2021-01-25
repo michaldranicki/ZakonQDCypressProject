@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 import * as locator from  'locators.json';
-import {bestSellerSection, contactUsButton, homePageAds, homePageSlider, popularSection, signInButton} from 'pageobjects/pageelements/HomePageElement'
+import {bestSellerSection, contactUsButton, dressesSection, homePageAds, homePageSlider, popularSection, signInButton, tshirtSection, womenSection} from 'pageobjects/pageelements/HomePageElement'
 
 
 export function assertContactUsButton(){
@@ -12,11 +12,13 @@ export function assertContactUsButton(){
 
 export function assertPopularSection(){
 
-    return popularSection().find('li').should('have.length',7).its('length').then((xyz: number)=>{
+    // return popularSection().find('li').should('have.length',7).its('length').then((xyz: number)=>{
 
-        cy.log(xyz)
+    //     cy.log(xyz)
 
-    })
+    // })
+
+    return popularSection().find('li').should('have.length',7)
 
 }
 
@@ -41,5 +43,22 @@ export function assertHomePageSlider(){
 export function assertHomePageAds(){
 
     return homePageAds().find('li').should('have.length',2)
+
+}
+
+export function assertWomenSection(){
+
+    return womenSection().should('contain.text','Women')
+}
+
+export function assertDressesSection(){
+
+    return dressesSection().should('contain.text','Dresses')
+
+}
+
+export function assertTshirtSection(){
+
+    return tshirtSection().should('contain.text','T-shirts')
 
 }

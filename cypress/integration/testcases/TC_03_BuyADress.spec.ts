@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 import { navigateToUrl, validateTitle } from "pageobjects/pageactions/HomePageAction"
-import { assertHomePageAds, assertHomePageSlider, assertPopularSection } from "pageobjects/pageassertions/HomePageAssertion"
+import { assertHomePageAds, assertHomePageSlider, assertPopularSection, assertWomenSection } from "pageobjects/pageassertions/HomePageAssertion"
 
 
 
@@ -27,6 +27,7 @@ describe("Buy a dress",()=>{
             assertPopularSection()
             assertHomePageSlider()
             assertHomePageAds()
+            assertWomenSection()
 
         })
     
