@@ -1,12 +1,11 @@
 /// <reference types="cypress" />
 
-import * as locator from  'locators.json';
 import {bestSellerSection, contactUsButton, dressesSection, homePageAds, homePageSlider, popularSection, signInButton, tshirtSection, womenSection} from 'pageobjects/pageelements/HomePageElement'
 
 
 export function assertContactUsButton(){
 
-    return contactUsButton().should('contain.text', 'Contact Us')
+    return contactUsButton().should('contain.text', 'Contact us')
 
 }
 

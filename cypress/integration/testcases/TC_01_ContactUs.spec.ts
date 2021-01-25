@@ -4,6 +4,7 @@ import { contactUs, navigateToUrl, validateTitle } from 'pageobjects/pageactions
 import { fillInContact, returnToHome } from 'pageobjects/pageactions/contactUsPageAction'
 import * as data from 'fixtures/contactUsData.json'
 import {assertContactUsButton} from 'pageobjects/pageassertions/HomePageAssertion'
+import { assertHomeButton, assertSubjectHeadingList } from 'pageobjects/pageassertions/ContactUsPageAssertion'
 
 describe("Contact Us Form",()=>{
     
@@ -25,8 +26,11 @@ describe("Contact Us Form",()=>{
         })
     
         it("Access contact us form",()=>{
-
-            contactUs().assertContactUsButton()
+                        
+            contactUs()
+            assertContactUsButton()
+            assertHomeButton()
+            assertSubjectHeadingList()
            
             fillInContact(data.subject,data.email,data.order,data.msg)
             returnToHome()
