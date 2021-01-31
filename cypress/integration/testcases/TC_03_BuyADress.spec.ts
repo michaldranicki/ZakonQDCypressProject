@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import { navigateToUrl, validateTitle } from "pageobjects/pageactions/HomePageAction"
-import { assertHomePageAds, assertHomePageSlider, assertPopularSection, assertWomenSection } from "pageobjects/pageassertions/HomePageAssertion"
+import { navigateToUrl, search, validateTitle } from "pageobjects/pageactions/HomePageAction"
+import { assertBestSellerSection, assertHomePageAds, assertHomePageSlider, assertPopularSection, assertWomenSection } from "pageobjects/pageassertions/HomePageAssertion"
 
 
 
@@ -10,7 +10,7 @@ describe("Buy a dress",()=>{
 
               
     
-        before(()=>{
+        beforeEach(()=>{
     
             navigateToUrl()
                 
@@ -28,8 +28,15 @@ describe("Buy a dress",()=>{
             assertHomePageSlider()
             assertHomePageAds()
             assertWomenSection()
+            assertBestSellerSection()
 
         })
-    
-    
+
+        it("Buy a dress",()=>{
+
+            search('dress')
+
+        })
+   
+            
 })

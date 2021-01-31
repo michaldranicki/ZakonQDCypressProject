@@ -62,3 +62,15 @@ export function homePageAds(){
     return cy.get(locator.homePage.homePageAds)
 
 }
+
+export function searchBar(){
+
+    return cy.get(locator.homePage.searchBar)
+
+}
+
+export function loopButton(){
+
+    return cy.get(locator.homePage.loopButton)
+
+}

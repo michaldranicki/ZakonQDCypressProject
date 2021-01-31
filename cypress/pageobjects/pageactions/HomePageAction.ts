@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import {contactUsButton,signInButton} from 'pageobjects/pageelements/HomePageElement'
+import {contactUsButton,loopButton,searchBar,signInButton} from 'pageobjects/pageelements/HomePageElement'
 
   
 export function navigateToUrl(){
@@ -24,5 +24,12 @@ export function contactUs(){
 export function signIn(){
 
     signInButton().click()
+
+}
+
+export function search(searchText: string){
+
+    searchBar().type(searchText)
+    loopButton()
 
 }

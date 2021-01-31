@@ -11,13 +11,7 @@ export function assertContactUsButton(){
 
 export function assertPopularSection(){
 
-    // return popularSection().find('li').should('have.length',7).its('length').then((xyz: number)=>{
-
-    //     cy.log(xyz)
-
-    // })
-
-    return popularSection().find('li').should('have.length',7)
+       return popularSection().find('li').should('have.length',7)
 
 }
 
