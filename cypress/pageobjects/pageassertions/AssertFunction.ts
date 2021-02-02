@@ -1,10 +1,10 @@
 /// <reference types="cypress" />
 
-import { should } from "chai"
 
-export function assertShouldHaveLenght(selector: string,value){
+export function assertShouldHaveLenght(selector:string,value:number){
 
-    cy.get(selector).should(value)
+    cy.get(selector).should('have.length',value)
+    //should('have.lenght',7)
 
 }
 
@@ -14,9 +14,15 @@ export function assertIsVIsible(selector){
 
 }
 
-export function assertContainsText(selector,text: string){
+export function assertContainsText(selector:string,text: string){
 
     cy.get(selector).should('contain.text',text)
+
+}
+
+export function assertClass(selector:string,className:string){
+
+    cy.get(selector).should('have.class',className)
 
 }
 
