@@ -17,6 +17,13 @@
 
     },
 
+    "shopPage":{
+
+        "topSellers":"#best-sellers_block_right",
+        "mainElements":"#center_column > ul"
+
+    },    
+
     "contactUsPage":{
 
         "homeButton":"#columns > div.breadcrumb.clearfix > a",

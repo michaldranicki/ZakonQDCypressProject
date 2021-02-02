@@ -30,6 +30,6 @@ export function signIn(){
 export function search(searchText: string){
 
     searchBar().type(searchText)
-    loopButton()
+    loopButton().click()
 
 }
