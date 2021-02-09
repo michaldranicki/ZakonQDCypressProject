@@ -9,5 +9,5 @@
   "include": [
     "**/*.ts",
     "**/*.json"
-  ]
+, "ActionFunctions"  ]
 }
