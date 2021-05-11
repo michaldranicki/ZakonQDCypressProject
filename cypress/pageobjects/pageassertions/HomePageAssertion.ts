@@ -55,3 +55,7 @@ export function assertTshirtSection(){
     return tshirtSection().should('contain.text','T-shirts')
 
 }
+
+export function isHomePage(){
+    return assertHomePageAds()&&assertWomenSection()
+}

@@ -1,40 +1,27 @@
 /// <reference types="cypress" />
 
-import HomePageAction from '../../pageobjects/pageactions/HomePageAction'
-import ContactUsPageAction from '../../pageobjects/pageactions/contactUsPageAction'
-import SignInPageAction from '../../pageobjects/pageactions/SignInPageAction'
-import CreateAccountPageAction from '../../pageobjects/pageactions/CreateAccountAction'
+
+
+import {navigateToUrl} from "../../pageobjects/pageactions/HomePageAction";
+import {isHomePage} from "../../pageobjects/pageassertions/HomePageAssertion";
 
 describe("Create account",()=>{
-    
 
-        const homePage = new HomePageAction()
-        const contactUsPage = new ContactUsPageAction()
-        const signInPage = new SignInPageAction()
-        const CreatePage = new CreateAccountPageAction()
-    
         before(()=>{
     
-            homePage.navigateToUrl()
-            cy.fixture('createAccountData.json').then((createAccountData)=>{
-
-                globalThis.data = createAccountData
-            })
+           navigateToUrl()
     
         })
     
-        it("Validate title of the page",()=>{
+        it("Validate if it is homePage",()=>{
     
-            homePage.validateTitle().should('eq','My Store')
+        isHomePage()
     
         })
     
         it("Access sign in page",()=>{
 
-            homePage.contactUs()
-           
-            contactUsPage.fillInContact(globalThis.data.subject,globalThis.data.email,globalThis.data.order,globalThis.data.msg)
-            contactUsPage.returnToHome()
+
 
         })
     
