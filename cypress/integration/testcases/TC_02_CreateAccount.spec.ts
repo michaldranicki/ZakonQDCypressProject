@@ -7,7 +7,6 @@ import {isHomePage} from "../../pageobjects/pageassertions/HomePageAssertion";
 import {signInButton} from "../../pageobjects/pageelements/HomePageElement";
 import {isSignInPage} from "../../pageobjects/pageassertions/signInPageAssertion";
 import {checkFunction, clickFunction, selectFunction, typeFunction} from "../../actionfunction/actionFunctions";
-import * as locator from  'locators.json';
 import * as data from 'fixtures/createAccountData.json'
 
 describe("Create account",()=>{
@@ -44,8 +43,8 @@ describe("Create account",()=>{
         selectFunction('#years',data.year);
         checkFunction('#newsletter');
         checkFunction('#optin');
-        typeFunction('#firstName',firstName);
-        typeFunction('#lastName',lastName);
+        //typeFunction('#firstname',firstName);
+        //typeFunction('#lastname',lastName);
         typeFunction('#company',data.company);
         typeFunction('#address1',data.address1);
         typeFunction('#city',data.city);
