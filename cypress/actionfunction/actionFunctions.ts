@@ -2,7 +2,7 @@
 
 export function clickFunction(element:string){
 
-    cy.get(element).click
+    cy.get(element).click()
 
 }
 

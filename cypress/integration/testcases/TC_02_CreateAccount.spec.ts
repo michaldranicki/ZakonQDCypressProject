@@ -5,8 +5,10 @@
 import {navigateToUrl} from "../../pageobjects/pageactions/HomePageAction";
 import {isHomePage} from "../../pageobjects/pageassertions/HomePageAssertion";
 import {signInButton} from "../../pageobjects/pageelements/HomePageElement";
-import {createAccountButton} from "../../pageobjects/pageelements/SignInPageElement";
 import {isSignInPage} from "../../pageobjects/pageassertions/signInPageAssertion";
+import {clickFunction, typeFunction} from "../../actionfunction/actionFunctions";
+import * as locator from  'locators.json';
+import * as data from 'fixtures/createAccountData.json'
 
 describe("Create account",()=>{
 
@@ -24,8 +26,11 @@ describe("Create account",()=>{
         })
 
         it("Put in email and click create account button",()=>{
-
+        typeFunction(locator.signInPage.emailCreateAccount,data.email)
+                clickFunction('#SubmitCreate')
         })
+
+
     
     
 })
